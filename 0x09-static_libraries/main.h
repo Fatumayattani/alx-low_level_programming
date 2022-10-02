@@ -1,13 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-/**
-* File: main.h
-*
-* Description: file contains prototype functions
-* included in the static libraries
-*/
-
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -29,4 +21,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif /*MAIN_H*/
+#endif

@@ -2,11 +2,11 @@
 #include "dog.h"
 
 /**
-*init_dog - variable of type struct dog
-*@d: pointer to structure
-@name: first member
-@age: seconf member
-*@owner: third member
+*init_dog - variable of type struct dog.
+*@d: pointer to structure.
+*@name: first member
+*@age: second member.
+*@owner: third member.
 *
 *Return: void
 */

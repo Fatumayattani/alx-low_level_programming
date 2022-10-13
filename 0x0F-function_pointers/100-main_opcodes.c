@@ -2,11 +2,11 @@
 #include<stdlib.h>
 
 /**
-* main- Entry point
+*main- Entry point
 *@argc: the number of parameters.
 *@argc: the number of parameters.
 *
-*Return: 0
+*Return: 0.
 */
 int main(int argc, char *argv[])
 {

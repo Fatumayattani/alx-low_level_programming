@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "variadic_functions.h"
+#include <stdlib.h>
 
 /**
 * print_numbers - prints integer with a separator

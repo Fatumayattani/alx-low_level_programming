@@ -5,7 +5,7 @@
 * struct dog - list dates about pet
 * @name: pet name
 * @age: pet age
- ** @owner: pet owner name
+* @owner: pet owner name
 *
 */
 

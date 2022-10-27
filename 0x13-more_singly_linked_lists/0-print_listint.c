@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_listint - prints elements of a linked list
@@ -14,7 +15,7 @@ size_t print_listint(const listint_t *h)
 	while (cursor != NULL)
 	{
 		printf("%d\n", cursor->n);
-		count += 1;
+		count ++;
 		cursor = cursor->next;
 	}
 	return (count);

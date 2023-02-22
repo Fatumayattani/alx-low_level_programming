@@ -1,18 +1,23 @@
-#include "main.h"
 /*
-* print_alphabet_x10 - function to print abc 10 times
-*
-* Return: 0
+*File: alphabet ten times
+*Auth: Fatuma Yattani
 */
+
+#include "main.h"
+
+/**
+ *print_alphabet_x10 - print alphabet 10 times, in lowercase.
+*/
+
 void print_alphabet_x10(void)
 {
-char c, i;
-for (i = 0; i <= 9; i++)
-{
-for (c = 'a'; c <= 'z'; c++)
-{
-_putchar(c);
-}
-_putchar('\n');
-}
+	int coun = 0;
+	char alpha;
+
+	while (coun++ <= 9)
+	{
+		for (alpha = 97; alpha <= 122; alpha++)
+			_putchar(alpha);
+		_putchar('\n');
+	}
 }

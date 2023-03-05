@@ -1,65 +1,69 @@
-#include"3-calc.h"
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
+ * op_add - add two number
+ * @a: the first number
+ * @b: the secound number
  *
- *  * get_op_func - get the operator and redirect to the func.
- *
- *   * @s: the operator
- *
- *   (* a blank line
- *
- *   * Description: get the operator and redirect to the func.)?
- *
- *   (* section header: 3-calc.h)*
- *
- *   * Return: return null or the function to do.
- *
- *   */
-
-
-
-int (*get_op_func(char *s))(int, int)
-
+ * Return: the sum of @a and @b
+ */
+int op_add(int a, int b)
 {
-
-		op_t ops[] = {
-
-					{"+", op_add},
-
-							{"-", op_sub},
-
-									{"*", op_mul},
-
-											{"/", op_div},
-
-													{"%", op_mod},
-
-															{NULL, NULL}
-
-						};
-
-			int i;
-
-
-
-				i = 0;
-
-					while (i < 5)
-
-							{
-
-										if (strcmp(s, ops[i].op) == 0)
-
-													{
-
-																	return (*(ops[i]).f);
-
-																			}
-
-												i++;
-
-													}
-
-						return (NULL);
-
+	return (a + b);
+}
+/**
+ * op_sub - subtraction of two number
+ * @a: the first number
+ * @b: the second number
+ *
+ * Return: the difference of @a and @b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+/**
+ * op_mul - the multplication two number
+ * @a: the first number
+ * @b: the second number
+ *
+ * Return: the product of @a and @b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * op_div - the division of two number
+ * @a: the first number
+ * @b: the second number
+ *
+ * Return: result of division
+ */
+int op_div(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a / b);
+}
+/**
+ * op_mod - the modular of two number
+ * @a: the first number
+ * @b: the second number
+ *
+ * Return: the remainder of the division
+ */
+int op_mod(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a % b);
 }
